@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "description": "A Lore application",
-  "main": "server.js",
   "keywords": [],
   "scripts": {
-    "build": "npm run clean && webpack --env.prod",
-    "build:prod": "npm run clean && webpack --env.prod -p",
+    "build": "npm run clean && webpack --env=production",
+    "build:prod": "npm run clean && webpack --env=production -p",
     "clean": "rimraf dist",
     "server": "json-server --watch db.json --port=1337",
-    "start": "webpack-dev-server --history-api-fallback --hot --env.dev --port=3000",
+    "start": "webpack-dev-server --history-api-fallback --hot --env=development --port=3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
