@@ -18,7 +18,7 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var { getIfUtils, removeEmpty } = require('webpack-config-utils');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-// var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = function(env) {
   var { ifProduction, ifNotProduction } = getIfUtils(env);
@@ -189,22 +189,22 @@ module.exports = function(env) {
         template: './index.html',
         inject: 'body',
       }),
-      // new FaviconsWebpackPlugin({
-      //   logo: './assets/images/favicon.png',
-      //   prefix: 'favicons-[hash]/',
-      //   emitStats: true,
-      //   statsFilename: 'favicon-manifest.json',
-      //   icons: {
-      //     android: false,
-      //     appleIcon: false,
-      //     appleStartup: false,
-      //     coast: false,
-      //     favicons: true,
-      //     firefox: false,
-      //     windows: false,
-      //     yandex: false
-      //   }
-      // })
+      new FaviconsWebpackPlugin({
+        logo: './assets/images/favicon.png',
+        prefix: 'favicons-[hash]/',
+        emitStats: true,
+        statsFilename: 'favicon-manifest.json',
+        icons: {
+          android: false,
+          appleIcon: false,
+          appleStartup: false,
+          coast: false,
+          favicons: true,
+          firefox: false,
+          windows: false,
+          yandex: false
+        }
+      })
     ])
   };
 };
