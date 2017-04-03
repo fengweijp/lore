@@ -65,7 +65,7 @@ module.exports = function(env) {
                   importLoaders: 1
                 }
               },
-              // 'postcss-loader'
+              'postcss-loader'
             ]
           }), [
             'style-loader',
@@ -75,7 +75,7 @@ module.exports = function(env) {
                 importLoaders: 1
               }
             },
-            // 'postcss-loader'
+            'postcss-loader'
           ])
         },
         {
@@ -89,7 +89,7 @@ module.exports = function(env) {
                   importLoaders: 1
                 }
               },
-              // 'postcss-loader',
+              'postcss-loader',
               'less-loader'
             ]
           }), [
@@ -100,7 +100,7 @@ module.exports = function(env) {
                 importLoaders: 1
               }
             },
-            // 'postcss-loader',
+            'postcss-loader',
             'less-loader'
           ])
         },
@@ -115,7 +115,7 @@ module.exports = function(env) {
                   importLoaders: 1
                 }
               },
-              // 'postcss-loader',
+              'postcss-loader',
               'sass-loader'
             ]
           }), [
@@ -126,7 +126,7 @@ module.exports = function(env) {
                 importLoaders: 1
               }
             },
-            // 'postcss-loader',
+            'postcss-loader',
             'sass-loader'
           ])
         },
