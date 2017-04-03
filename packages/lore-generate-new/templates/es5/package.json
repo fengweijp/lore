@@ -5,11 +5,11 @@
   "description": "A Lore application",
   "keywords": [],
   "scripts": {
-    "clean": "rimraf dist",
     "build": "npm run clean && webpack --env=production",
     "build:prod": "npm run clean && webpack --env=production -p",
-    "start": "webpack-dev-server --history-api-fallback --hot --env=development --port=3000",
+    "clean": "rimraf dist",
     "server": "json-server --watch db.json --port=1337",
+    "start": "webpack-dev-server --history-api-fallback --hot --env=development --port=3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -25,8 +25,8 @@
     "lore-hook-dialog": "~0.12.0-beta",
     "lore-hook-dialogs-bootstrap": "^0.12.0-beta",
     "lore-hook-models": "~0.12.0-beta",
-    "lore-hook-reducers": "~0.12.0-beta",
     "lore-hook-react": "~0.12.0-beta",
+    "lore-hook-reducers": "~0.12.0-beta",
     "lore-hook-redux": "~0.12.0-beta",
     "lore-hook-router": "~0.12.0-beta",
     "lore-utils": "~0.12.0-beta",
