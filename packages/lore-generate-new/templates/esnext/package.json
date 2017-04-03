@@ -10,7 +10,7 @@
     "build:prod": "npm run clean && webpack --env.prod -p",
     "clean": "rimraf dist",
     "server": "json-server --watch db.json --port=1337",
-    "start": "webpack-dev-server --history-api-fallback --env.dev --hot --port=3000",
+    "start": "webpack-dev-server --history-api-fallback --hot --env.dev --port=3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -52,7 +52,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.1.0",
-    "favicons-webpack-plugin": "0.0.7",
+    "favicons-webpack-plugin": "~0.0.7",
     "file-loader": "0.8.4",
     "gulp": "3.9.1",
     "html-webpack-plugin": "^2.28.0",
